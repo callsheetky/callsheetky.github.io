@@ -6,6 +6,10 @@
 <meta name="theme-color" content="#F2F3EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="CallSheet">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>CallSheet</title>
 <meta name="description" content="Local contractors by trade, rated by the owners who hired them. Post a job, compare sealed bids, hire. Free for property owners and managers in Kentucky.">
 <meta property="og:type" content="website">
@@ -25,13 +29,15 @@
     <div style="display:flex;align-items:center;gap:10px"><h1 class="brand">Call<span>Sheet</span></h1></div>
     <div id="hdr" style="display:flex;gap:8px;align-items:center"></div>
   </header>
-  <main id="main"><div class="empty" id="boot">Loading…</div></main>
+  <main id="main"><div class="empty" id="boot"><p style="margin:0 0 8px"><strong>CallSheet</strong> — local contractors by trade in Hardin County, Kentucky (Radcliff, Elizabethtown, Vine Grove, Fort Knox), rated by the property owners who hired them. Post a repair job, compare sealed bids, hire. Free for property owners and managers; contractors list free.</p><p style="margin:0">Loading…</p></div></main>
 </div>
 <nav class="bottom" aria-label="Sections" hidden><div class="inner" id="nav"></div></nav>
 <div class="scrim" id="scrim" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="s-title"></div></div>
 <div class="toast" id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script src="qrcode.js"></script>
+<script src="config.js"></script>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
